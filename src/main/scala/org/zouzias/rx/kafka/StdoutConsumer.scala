@@ -11,7 +11,7 @@ object StdoutConsumer extends App{
   val topicName : String = "words"
 
   // Connect to local Kafka
-  val consumer = new RxConsumer("localhost:2181", "echo-consumer")
+  val consumer = new RxConsumer("localhost:2181", "stdout-consumer")
 
   // Print out message to stdout
   consumer.getRecordStream[String,String](topicName, new StringDecoder(), new StringDecoder())
