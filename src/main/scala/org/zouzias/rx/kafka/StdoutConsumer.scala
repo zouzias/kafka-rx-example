@@ -6,7 +6,7 @@ import kafka.serializer.StringDecoder
 /**
  * An echo consumer using kafka-rx
  */
-object EchoConsumer extends App{
+object StdoutConsumer extends App{
 
   val topicName : String = "words"
 
