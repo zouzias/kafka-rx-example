@@ -1,10 +1,12 @@
-package org.zouzias.rx.kafka
+package org.zouzias.rx.kafka.consumers
 
 import com.cj.kafka.rx.RxConsumer
 import kafka.serializer.StringDecoder
 
 /**
  * An echo consumer using kafka-rx
+ *
+ * Read messages from topic "words" and print them to stdout
  */
 object StdoutConsumer extends App{
 

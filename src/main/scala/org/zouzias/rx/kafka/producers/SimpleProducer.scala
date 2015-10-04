@@ -1,14 +1,15 @@
-package org.zouzias.rx.kafka
-
-import com.cj.kafka.rx.Record
-
-import org.apache.kafka.clients.producer.{ProducerRecord, Producer, KafkaProducer}
-import org.apache.kafka.common.serialization.StringSerializer
+package org.zouzias.rx.kafka.producers
 
 import java.util.Properties
 
+import com.cj.kafka.rx.Record
+import org.apache.kafka.clients.producer.{KafkaProducer, Producer, ProducerRecord}
+import org.apache.kafka.common.serialization.StringSerializer
+
 /**
  * A simple example writing message to Kafka
+ *
+ * Produces message to Kafka topic "words"
  */
 object SimpleProducer extends App{
 

@@ -1,8 +1,8 @@
-package org.zouzias.rx.kafka
+package org.zouzias.rx.kafka.consumers
 
 import com.cj.kafka.rx.RxConsumer
 import org.zouzias.rx.kafka.utils.RxConsumerImplicits
-import RxConsumerImplicits._
+import org.zouzias.rx.kafka.utils.RxConsumerImplicits._
 
 /**
  * A simple word count example using kafka-rx
