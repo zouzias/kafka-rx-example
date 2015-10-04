@@ -1,7 +1,8 @@
 package org.zouzias.rx.kafka
 
 import com.cj.kafka.rx.RxConsumer
-import org.zouzias.rx.kafka.RxConsumerImplicits._
+import org.zouzias.rx.kafka.utils.RxConsumerImplicits
+import RxConsumerImplicits._
 
 /**
  * A simple word count example using kafka-rx
@@ -29,6 +30,6 @@ object WordCountConsumer extends App{
       counts + (word -> count)
   }
 
-  // print out the map
+  // print out the word-count
   counts.foreach(println)
 }
