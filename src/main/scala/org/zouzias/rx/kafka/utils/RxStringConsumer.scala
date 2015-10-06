@@ -5,7 +5,7 @@ import kafka.serializer.StringDecoder
 import rx.lang.scala.Observable
 
 /**
- * Consumer for string key-value messages
+ * Consumer for string key-value Kafka messages
  */
 class RxStringConsumer(val consumer : RxConsumer) {
 

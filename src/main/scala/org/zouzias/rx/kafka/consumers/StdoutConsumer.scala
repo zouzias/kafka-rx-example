@@ -4,15 +4,15 @@ import com.cj.kafka.rx.RxConsumer
 import kafka.serializer.StringDecoder
 
 /**
- * An echo consumer using kafka-rx
+ *  Consumes Kafka topics to stdout
  *
  * Read messages from topic "words" and print them to stdout
+ *
+ * Assumes that messages are serialized using StringDecoder/StringEncoder.
  */
 object StdoutConsumer extends App{
 
-  val topicName : String = "words"
-
-  // Connect to local Kafka
+  val topicName : String = "new-words"
   val consumer = new RxConsumer("localhost:2181", "stdout-consumer")
 
   // Print out message to stdout

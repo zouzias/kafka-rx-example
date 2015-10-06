@@ -1,7 +1,6 @@
 package org.zouzias.rx.kafka.consumers
 
 import com.cj.kafka.rx.RxConsumer
-import org.zouzias.rx.kafka.utils.RxConsumerImplicits
 import org.zouzias.rx.kafka.utils.RxConsumerImplicits._
 
 /**
